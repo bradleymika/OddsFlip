@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OddsFlip</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet"> <!-- Add Google Font -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: 'Baloo 2', cursive; /* Apply the bubble font */
+        }
+        .header-logo {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .banner-container img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    {% load static %}
+    <header class="bg-primary text-white p-3 d-flex align-items-center">
+        <img src="{% static 'images/oddslogo.png' %}" alt="OddsFlip Logo" class="header-logo">
+        <h1 class="m-0">OddsFlip</h1>
+        <nav class="ml-auto">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="{% url 'dashboard' %}">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="{% url 'profile' %}">Profile</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="{% url 'logout' %}">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner-container mt-3">
+        <img src="{% static 'images/banner.png' %}" alt="Banner" class="img-fluid w-100">
+    </div>
+    <main class="container mt-4">
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
+
+
