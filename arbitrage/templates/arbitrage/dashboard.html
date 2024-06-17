@@ -1,0 +1,24 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<div class="container">
+    <h2 class="display-4">Arbitrage Opportunities</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Event</th>
+                <th scope="col">Time</th>
+                <th scope="col">Odds</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for opportunity in opportunities %}
+            <tr>
+                <td>{{ opportunity.event }}</td>
+                <td>{{ opportunity.created_at|date:"P" }}</td>
+                <td>{{ opportunity.odds }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
