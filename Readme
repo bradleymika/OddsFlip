@@ -1,1 +1,15 @@
-OddsFlip is a Website I have created that eventually people can subscribe to in order to see live lines of daily games. I am starting with MLB games daily and intend to include API's of live odds trackers. 
+Introduction
+Welcome to OddsFlip, a comprehensive web application designed to provide sports enthusiasts and bettors with real-time information on daily sports events and odds across various betting platforms. 
+Our platform aims to simplify the process of finding the best odds and making informed betting decisions by aggregating data from multiple sources into a single, user-friendly interface.
+
+Project Overview
+OddsFlip leverages APIs to gather and display up-to-date sports events and betting odds from different betting apps. 
+This project aims to enhance the betting experience by offering a centralized location for comparing odds and tracking sports events, 
+ensuring users have the information they need to make informed bets.
+
+Features
+Real-Time Data: OddsFlip uses APIs to fetch real-time sports events and odds, ensuring users always have access to the latest information.
+Multi-Platform Comparison: Users can compare odds across different betting apps, helping them find the best value for their bets.
+User-Friendly Interface: The platform is designed with ease of use in mind, offering intuitive navigation and clear presentation of data.
+Comprehensive Coverage: OddsFlip covers a wide range of sports and events, catering to diverse interests and betting preferences.
+
